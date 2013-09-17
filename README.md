@@ -1,4 +1,5 @@
 SL-Opinionator
 ==============
 
-Likert-scale voting tool for Second Life.
+A "Likert Scale" Social Grapher (voting tool) for Second Life.
+
