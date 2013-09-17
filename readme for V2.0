@@ -1,0 +1,40 @@
+The Opinionator V2.0
+
+= RELEASE NOTES =
+- V2.0 -
+The only difference between this release and V1.1 is that this one is copyable AND transferable.
+
+- V1.1 -
+   * Cosmetic changes.
+   * Reduced the number of prims used to 25.
+   * Permissions now allow an owner to make multiple copies (but no transfers).
+   * Permissions now allow retexturing (e.g. for more languages) and editing of prims (with some caveats, see "Editing The Prims" notes below).
+_ Known Limitations _
+   * Will only detect up to 16 avatars in any target zone.
+
+- V1.0 -
+   * Initial release.
+_ Known Limitations _
+   * Will only detect up to 16 avatars in any target zone.
+
+
+= Editing The Prims =
+(ignore this section unless you are a builder)
+
+   * We suggest you take a copy before editing, in case something gets messed up.
+   * You can retexture any prims without worry.
+   * While it is possible to reshape the prims, note that the scripts will only work with the five "target" zones in exactly the original configuration and scale. Also, the white, triangular prim must not be moved because it acts as a datum for the avatar scanning.
+   * Don't rename the target prims (targ0 - targ4) or the segment prims (seg0 -seg4) because the scripts will stop working.
+   * If you unlink then you can relink the prims in any order, apart from the white, triangular "datum" prim, which must be linked last.
+
+
+= Technical Notes  =
+(most people can ignore this section)
+
+ - Notecard Delay Setting -
+ An owner-only message is sent when The Opinionator is rezzed. It reads,
+   "Controller: Notecard delay setting: 0.400000".
+This means that each target zone will be scanned for avatars every 0.4 seconds (giving an update cycle time of 0.4 * 5 = 2 seconds).
+It is possible to increase this setting to reduce the lag on the sim (but this will also slow the response time). This setting can also be reduced, but this is not recommended as it could unduly load your sim.
+If you wish to modify this parameter then click pie-menu>edit, tick "Edit linked parts" and select the invisible, rotating prim. In the Contents tab of the edit dialog you will see a notecard called "settings" which you should open and change accordingly. The notecard must contain only the delay number followed by a newline.
+
