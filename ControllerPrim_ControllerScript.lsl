@@ -1,3 +1,12 @@
+//
+//  Second Life Opinionator
+//
+//  Copyright (c) 2013 Ian Evans, ideacrystals
+//
+//  Licensed under the MIT license, see LICENSE file for details.
+//  All text above must be included in any redistribution.
+//
+
 // NOTE: link the white "direction marker" prim last to make
 // it the root prim (because the sensor rotation is w.r.t
 // this root prim).
